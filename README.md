@@ -35,7 +35,9 @@ CSS 提供了对多列布局的支持。支持设置布局中的列数 (`column-
 }
 ```
 
-# 2. 书写模式（Writing Modes）
+## 2. CSS Counter
+
+## 2. 书写模式（Writing Modes）
 
 > [MDN - CSS Writing Modes](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Writing_Modes)
 
@@ -69,7 +71,7 @@ Writing Modes 定义了各种国际书写模式，例如从左到右（拉丁语
 
 [**Codepen - Matrix code rain**](https://codepen.io/mudontire/pen/YzreyWL)
 
-# 3. `aspect-ratio` 属性
+## 3. `aspect-ratio` 属性
 
 > [MDN - aspect-ratio](https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio)
 
@@ -93,7 +95,7 @@ CSS 的 `aspect-ratio` 属性用于设置元素的首选宽高比，可以自动
 }
 ```
 
-# 4. `gap` 属性
+## 4. `gap` 属性
 
 > [MDN - gap](https://developer.mozilla.org/en-US/docs/Web/CSS/gap)
 
@@ -138,7 +140,7 @@ CSS 的 `gap` 属性用于 flex 和 grid 布局时设置行和列之间的间隔
 
 [**Codepen demo**](https://codepen.io/mudontire/pen/ExwQKGK)
 
-# 5. CSS Shapes
+## 5. CSS Shapes
 
 > [MDN - CSS Shapes](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Shapes)
 
@@ -164,7 +166,7 @@ img {
 }
 ```
 
-# 6. `object-fit` 属性
+## 6. `object-fit` 属性
 
 > [MDN - object-fit](https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit)
 
@@ -178,7 +180,7 @@ img {
 
 [**Codepen demo**](https://codepen.io/mudontire/pen/BawYJrQ)
 
-# 7. `filter` 属性
+## 7. `filter` 属性
 
 > [MDN - filter](https://developer.mozilla.org/en-US/docs/Web/CSS/filter)
 
@@ -190,7 +192,7 @@ CSS 的 `filter` 属性将图像的效果调整（模糊、对比度、灰度、
 
 ![gray-scale](./images/gray-scale.png)
 
-# 8. `backdrop-filter` 属性
+## 8. `backdrop-filter` 属性
 
 与 `filter` 类似的属性，`backdrop-filter` 属性将图形效果（例如模糊或颜色偏移）应用于元素的背景区域。 因为它适用于元素后面的所有内容，使用时需要将元素或其背景至少部分设置为透明才能看到效果。
 
@@ -227,7 +229,7 @@ p {
 }
 ```
 
-# 9. `conic-gradient()` 函数
+## 9. `conic-gradient()` 函数
 
 > [MDN - conic-gradient()](<https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/conic-gradient()>)
 
@@ -243,7 +245,7 @@ CSS 中的 `linear-gradient()` 函数大家应该接触的不少，除此之外 
 
 [**Codepen demo**](https://codepen.io/mudontire/pen/LYzQJLq)
 
-# 10. `accent-color` 属性
+## 10. `accent-color` 属性
 
 > [MDN - accent-color](https://developer.mozilla.org/en-US/docs/Web/CSS/accent-color)
 
@@ -290,7 +292,7 @@ CSS 的 `accent-color` 属性用于设置由某些元素生成的 UI 控件的�
 }
 ```
 
-# 11. 滚动捕捉（Scroll Snap）
+## 11. 滚动捕捉（Scroll Snap）
 
 > [MDN - CSS Scroll Snap](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Scroll_Snap)
 
@@ -334,7 +336,7 @@ section {
 }
 ```
 
-# 12. `overscroll-behavior` 属性
+## 12. `overscroll-behavior` 属性
 
 > [MDN - overscroll-behavior](https://developer.mozilla.org/en-US/docs/Web/CSS/overscroll-behavior)
 
@@ -346,6 +348,3 @@ CSS的 `overscroll-behavior` 属性用于定义元素滚动到滚动区域边界
 
 **示例**：[Codepen demo](https://codepen.io/mudontire/pen/ExwQqdO)
 
-# 
-
-好了，目前能想到的就是这么多，希望对大家更高效、更优雅的画页面有帮助 😀！
