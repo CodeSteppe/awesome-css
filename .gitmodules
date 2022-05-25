@@ -1,3 +1,6 @@
 [submodule "features/css-mansory"]
 	path = features/css-mansory
 	url = git@github.com:CodeSteppe/css-mansory.git
+[submodule "features/video-inside-text2"]
+	path = features/video-inside-text2
+	url = git@github.com:CodeSteppe/video-inside-text2.git
