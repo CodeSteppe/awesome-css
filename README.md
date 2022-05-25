@@ -35,7 +35,25 @@ CSS 提供了对多列布局的支持。支持设置布局中的列数 (`column-
 }
 ```
 
-## 2. CSS Counter
+## 2. CSS 计数器（Counters）
+
+> [MDN - Using CSS counters](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Counter_Styles/Using_CSS_counters)
+
+> [Can I Use - CSS Counters](https://caniuse.com/css-counters)
+
+对页面元素进行自动计数并展示。
+
+比如实现下面的这种多级列表的序号：
+
+![list counters](./images/counter.png);
+
+**常用方法：**
+
+```
+1. counter-reset: <name> <value>; // 初始化一个名称为 <name> 的计数器，设置初始值为 <value>
+2. counter-increment: <name> <value>; // 给名称为 <name> 的计数器的值增加 <value>
+3. counter(<name>, <style>); // 返回名称为 <name> 的计数器的值，以 <style> 的 list style样式显示
+```
 
 ## 2. 书写模式（Writing Modes）
 

@@ -8,17 +8,21 @@
   <title>Counter</title>
   <style>
     ol {
-      counter-reset: li-counter;
-      list-style: none;
-    }
-
-    li {
-      counter-increment: li-counter;
+      counter-reset: section;
+      /* Creates a new instance of the
+                                            section counter with each ol
+                                            element */
+      list-style-type: none;
     }
 
     li::before {
-      content: counter(li-counter)". ";
-      text-align: right;
+      counter-increment: section;
+      /* Increments only this instance
+                                            of the section counter */
+      content: counters(section, ".") " ";
+      /* Combines the values of all instances
+                                            of the section counter, separated
+                                            by a period */
     }
   </style>
 
@@ -27,24 +31,33 @@
 <body>
 
   <ol>
-    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit</li>
-    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit</li>
-    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit</li>
-    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit</li>
-    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit</li>
-    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit</li>
-    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit</li>
-    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit</li>
-    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit</li>
-    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit</li>
-    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit</li>
-    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit</li>
-    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit</li>
-    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit</li>
-    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit</li>
-    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit</li>
-    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit</li>
-    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit</li>
+    <li>item</li> <!-- 1     -->
+    <li>item
+      <!-- 2     -->
+      <ol>
+        <li>item</li> <!-- 2.1   -->
+        <li>item</li> <!-- 2.2   -->
+        <li>item
+          <!-- 2.3   -->
+          <ol>
+            <li>item</li> <!-- 2.3.1 -->
+            <li>item</li> <!-- 2.3.2 -->
+          </ol>
+          <ol>
+            <li>item</li> <!-- 2.3.1 -->
+            <li>item</li> <!-- 2.3.2 -->
+            <li>item</li> <!-- 2.3.3 -->
+          </ol>
+        </li>
+        <li>item</li> <!-- 2.4   -->
+      </ol>
+    </li>
+    <li>item</li> <!-- 3     -->
+    <li>item</li> <!-- 4     -->
+  </ol>
+  <ol>
+    <li>item</li> <!-- 1     -->
+    <li>item</li> <!-- 2     -->
   </ol>
 
 </body>
