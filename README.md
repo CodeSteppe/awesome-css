@@ -1,6 +1,6 @@
 # 冷门又好用的 CSS 特性
 
-## 1. 多列布局（Multi-column Layout）
+## 多列布局（Multi-column Layout）
 
 > [MDN - CSS Multi-column Layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Columns)
 
@@ -35,7 +35,7 @@ CSS 提供了对多列布局的支持。支持设置布局中的列数 (`column-
 }
 ```
 
-## 2. CSS 计数器（Counters）
+## CSS 计数器（Counters）
 
 > [MDN - Using CSS counters](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Counter_Styles/Using_CSS_counters)
 
@@ -55,7 +55,7 @@ CSS 提供了对多列布局的支持。支持设置布局中的列数 (`column-
 3. counter(<name>, <style>); // 返回名称为 <name> 的计数器的值，以 <style> 的 list style样式显示
 ```
 
-## 3. 书写模式（Writing Modes）
+## 书写模式（Writing Modes）
 
 > [MDN - CSS Writing Modes](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Writing_Modes)
 
@@ -89,7 +89,7 @@ Writing Modes 定义了各种国际书写模式，例如从左到右（拉丁语
 
 [**Codepen - Matrix code rain**](https://codepen.io/mudontire/pen/YzreyWL)
 
-## 4. `aspect-ratio` 属性
+## `aspect-ratio` 属性
 
 > [MDN - aspect-ratio](https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio)
 
@@ -113,7 +113,7 @@ CSS 的 `aspect-ratio` 属性用于设置元素的首选宽高比，可以自动
 }
 ```
 
-## 5. `gap` 属性
+## `gap` 属性
 
 > [MDN - gap](https://developer.mozilla.org/en-US/docs/Web/CSS/gap)
 
@@ -158,7 +158,7 @@ CSS 的 `gap` 属性用于 flex 和 grid 布局时设置行和列之间的间隔
 
 [**Codepen demo**](https://codepen.io/mudontire/pen/ExwQKGK)
 
-## 6. CSS Shapes
+## CSS Shapes
 
 > [MDN - CSS Shapes](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Shapes)
 
@@ -184,7 +184,7 @@ img {
 }
 ```
 
-## 7. `object-fit` 属性
+## `object-fit` 属性
 
 > [MDN - object-fit](https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit)
 
@@ -198,7 +198,7 @@ img {
 
 [**Codepen demo**](https://codepen.io/mudontire/pen/BawYJrQ)
 
-## 8. `filter` 属性
+## `filter` 属性
 
 > [MDN - filter](https://developer.mozilla.org/en-US/docs/Web/CSS/filter)
 
@@ -210,7 +210,7 @@ CSS 的 `filter` 属性将图像的效果调整（模糊、对比度、灰度、
 
 ![gray-scale](./images/gray-scale.png)
 
-## 9. `backdrop-filter` 属性
+## `backdrop-filter` 属性
 
 与 `filter` 类似的属性，`backdrop-filter` 属性将图形效果（例如模糊或颜色偏移）应用于元素的背景区域。 因为它适用于元素后面的所有内容，使用时需要将元素或其背景至少部分设置为透明才能看到效果。
 
@@ -247,7 +247,7 @@ p {
 }
 ```
 
-## 10. `conic-gradient()` 函数
+## `conic-gradient()` 函数
 
 > [MDN - conic-gradient()](<https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/conic-gradient()>)
 
@@ -263,7 +263,7 @@ CSS 中的 `linear-gradient()` 函数大家应该接触的不少，除此之外 
 
 [**Codepen demo**](https://codepen.io/mudontire/pen/LYzQJLq)
 
-## 11. `accent-color` 属性
+## `accent-color` 属性
 
 > [MDN - accent-color](https://developer.mozilla.org/en-US/docs/Web/CSS/accent-color)
 
@@ -310,7 +310,7 @@ CSS 的 `accent-color` 属性用于设置由某些元素生成的 UI 控件的�
 }
 ```
 
-## 12. 滚动捕捉（Scroll Snap）
+## 滚动捕捉（Scroll Snap）
 
 > [MDN - CSS Scroll Snap](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Scroll_Snap)
 
@@ -354,7 +354,7 @@ section {
 }
 ```
 
-## 13. `overscroll-behavior` 属性
+## `overscroll-behavior` 属性
 
 > [MDN - overscroll-behavior](https://developer.mozilla.org/en-US/docs/Web/CSS/overscroll-behavior)
 
@@ -367,3 +367,26 @@ CSS的 `overscroll-behavior` 属性用于定义元素滚动到滚动区域边界
 **示例**：[Codepen demo](https://codepen.io/mudontire/pen/ExwQqdO)
 
 ## `mix-blend-mode` 属性
+
+> [MDN - mix-blend-mode](https://developer.mozilla.org/en-US/docs/Web/CSS/mix-blend-mode)
+
+> [Can I Use - CSS property: mix-blend-mode](https://caniuse.com/mdn-css_properties_mix-blend-mode)
+
+`mix-blend-mode` 用来控制元素和其背景内容的颜色混合叠加方式。
+
+[All blend mode](https://developer.mozilla.org/en-US/docs/Web/CSS/blend-mode)
+
+**常用mode**
+
+- `multiply`: 颜色相乘，效果类似于把不同颜色的透明玻璃叠在一块儿
+  - 黑色 x color = 黑色
+  - 白色 x color = color
+
+- `screen`: 颜色相加，和屏幕显示原理相同，通过叠加不同强度的红、绿、蓝的光来产生其他颜色
+  - 红 + 绿 + 蓝 = 白色
+  - 黑色 + color = color
+  - 白色 + color = 白色
+  
+- `difference`: 颜色相减，由：亮色 - 暗色
+  - 黑色 - color = color
+  - 白色 - color = color的反色（和 filter:invert() 效果相同）
