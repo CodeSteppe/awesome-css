@@ -1,0 +1,3 @@
+[submodule "features/css-mansory"]
+	path = features/css-mansory
+	url = git@github.com:CodeSteppe/css-mansory.git
