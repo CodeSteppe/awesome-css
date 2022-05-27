@@ -57,9 +57,9 @@ CSS 提供了对多列布局的支持。支持设置布局中的列数 (`column-
 
 ## CSS `attr()` 方法
 
-[MDN - attr()](https://developer.mozilla.org/en-US/docs/Web/CSS/attr)
+> [MDN - attr()](https://developer.mozilla.org/en-US/docs/Web/CSS/attr)
 
-[Can I Use - CSS3 attr()](https://caniuse.com/css3-attr)
+> [Can I Use - CSS3 attr()](https://caniuse.com/css3-attr)
 
 可以通过CSS的 `attr()` 方法把 HTML 的 attributes 赋值给某些 CSS property。目前正式支持赋值的只有 `content` property，其他 property 还在实验阶段。
 
@@ -205,9 +205,9 @@ img {
 
 ## `background-attachment`
 
-[MDN - background-attachment](https://developer.mozilla.org/en-US/docs/Web/CSS/background-attachment)
+> [MDN - background-attachment](https://developer.mozilla.org/en-US/docs/Web/CSS/background-attachment)
 
-[Can I use - CSS background-attachment](https://caniuse.com/background-attachment)
+> [Can I use - CSS background-attachment](https://caniuse.com/background-attachment)
 
 用于设置元素的背景图是否相对于 viewport、自身还是content固定。常用于实现视差滚动效果。
 
@@ -321,17 +321,17 @@ CSS 中的 `linear-gradient()` 函数大家应该接触的不少，除此之外 
 
 ## `radial-gradient()` 函数
 
-[MDN - radial-gradient()](https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient)
+> [MDN - radial-gradient()](https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient)
 
-[Can I Use - radial-gradient()](https://caniuse.com/mdn-css_types_image_gradient_radial-gradient)
+> [Can I Use - radial-gradient()](https://caniuse.com/mdn-css_types_image_gradient_radial-gradient)
 
 `radial-gradient()` 用于产生一个从中心向外辐射的渐变色图像。
 
 ## `repeating-linear-gradient()` 函数
 
-[MDN - repeating-linear-gradient()](https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/repeating-linear-gradient)
+> [MDN - repeating-linear-gradient()](https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/repeating-linear-gradient)
 
-[Can I Use - repeating-linear-gradient()](https://caniuse.com/mdn-css_types_image_gradient_repeating-linear-gradient)
+> [Can I Use - repeating-linear-gradient()](https://caniuse.com/mdn-css_types_image_gradient_repeating-linear-gradient)
 
 `repeating-linear-gradient()` 用于产生一个重复的线性渐变色图像。
 
@@ -465,10 +465,13 @@ CSS的 `overscroll-behavior` 属性用于定义元素滚动到滚动区域边界
 
 ## `perspective` + `transform-style: preserve-3d` 属性
 
-[MDN - perspective](https://developer.mozilla.org/en-US/docs/Web/CSS/perspective)
-[Can I Use - CSS property: perspective](https://caniuse.com/mdn-css_properties_perspective)
-[MDN - ](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-style)
-[Can I Use - CSS property: transform-style](https://caniuse.com/mdn-css_properties_transform-style)
+> [MDN - perspective](https://developer.mozilla.org/en-US/docs/Web/CSS/perspective)
+
+> [Can I Use - CSS property: perspective](https://caniuse.com/mdn-css_properties_perspective)
+
+> [MDN - ](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-style)
+
+> [Can I Use - CSS property: transform-style](https://caniuse.com/mdn-css_properties_transform-style)
 
 两者结合产生3D空间视觉。
 
