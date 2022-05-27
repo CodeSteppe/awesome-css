@@ -55,6 +55,25 @@ CSS 提供了对多列布局的支持。支持设置布局中的列数 (`column-
 3. counter(<name>, <style>); // 返回名称为 <name> 的计数器的值，以 <style> 的 list style样式显示
 ```
 
+## CSS `attr()` 方法
+
+[MDN - attr()](https://developer.mozilla.org/en-US/docs/Web/CSS/attr)
+
+[Can I Use - CSS3 attr()](https://caniuse.com/css3-attr)
+
+可以通过CSS的 `attr()` 方法把 HTML 的 attributes 赋值给某些 CSS property。目前正式支持赋值的只有 `content` property，其他 property 还在实验阶段。
+
+**用法：**
+```html
+<p data-foo="hello">world</p>
+```
+
+```css
+p::before{
+  content: attr(data-foo) " ";
+}
+```
+
 ## 书写模式（Writing Modes）
 
 > [MDN - CSS Writing Modes](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Writing_Modes)
@@ -226,6 +245,7 @@ filter: sepia(60%);
 ```
 
 [Filters on image](https://codepen.io/mudontire/pen/MWYWpoG)
+[CS 3D tunnel](https://codepen.io/mudontire/pen/OJQzjWm)
 
 ## `backdrop-filter` 属性
 

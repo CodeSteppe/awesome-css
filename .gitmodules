@@ -7,3 +7,6 @@
 [submodule "features/css-scroll-slider"]
 	path = features/css-scroll-slider
 	url = git@github.com:CodeSteppe/css-scroll-slider.git
+[submodule "features/text-reflection"]
+	path = features/text-reflection
+	url = git@github.com:CodeSteppe/text-reflection.git
