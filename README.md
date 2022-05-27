@@ -1,4 +1,4 @@
-# 冷门又好用的 CSS 特性
+# 冷门、炫酷、牛X的 CSS 特性
 
 ## 多列布局（Multi-column Layout）
 
@@ -462,3 +462,14 @@ CSS的 `overscroll-behavior` 属性用于定义元素滚动到滚动区域边界
 - `difference`: 颜色相减，由：亮色 - 暗色
   - 黑色 - color = color
   - 白色 - color = color的反色（和 filter:invert() 效果相同）
+
+## `perspective` + `transform-style: preserve-3d` 属性
+
+两者结合产生3D视觉空间。
+
+`perspective` 用于设置透视效果，即Z方向上观察点和屏幕直接的距离，值不能为负值。
+
+`transform-style: preserve-3d` 用于设置
+
+
+

@@ -16,3 +16,6 @@
 [submodule "features/stamp-border"]
 	path = features/stamp-border
 	url = https://github.com/CodeSteppe/stamp-border
+[submodule "features/css-3d-tunnel"]
+	path = features/css-3d-tunnel
+	url = git@github.com:CodeSteppe/css-3d-tunnel.git

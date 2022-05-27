@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thanks 500 Fans</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div id="text">
+    <h1 style="--i:0">thank you!</h1>
+    <h1 style="--i:1">thank you!</h1>
+    <h1 style="--i:2">thank you!</h1>
+    <h1 style="--i:3">thank you!</h1>
+    <h1 style="--i:4">thank you!</h1>
+    <h1 style="--i:5">thank you!</h1>
+    <h1 style="--i:6">thank you!</h1>
+    <h1 style="--i:7">thank you!</h1>
+    <h1 style="--i:8">thank you!</h1>
+    <h1 style="--i:9">thank you!</h1>
+    <h1 style="--i:10">thank you!</h1>
+    <h1 style="--i:11">thank you!</h1>
+    <h1 style="--i:12">thank you!</h1>
+    <h1 style="--i:13">thank you!</h1>
+    <h1 style="--i:14">thank you!</h1>
+    <h1 style="--i:15">thank you!</h1>
+    <h1 style="--i:16">thank you!</h1>
+    <h1 style="--i:17">thank you!</h1>
+    <h1 style="--i:18">thank you!</h1>
+    <h1 style="--i:19">thank you!</h1>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+  <script>
+    var myCanvas = document.createElement('canvas');
+    document.body.appendChild(myCanvas);
+
+    var end = Date.now() + (3600 * 1000);
+
+    // go Buckeyes!
+    var colors = ['#ffffff', '#5eeaff', '#61ff3a'];
+    setTimeout(() => {
+      (function frame() {
+        confetti({
+          particleCount: 3,
+          angle: 60,
+          spread: 90,
+          origin: { x: 0 },
+          colors: colors,
+          startVelocity: 90,
+          ticks: 240
+        });
+        confetti({
+          particleCount: 3,
+          angle: 120,
+          spread: 90,
+          origin: { x: 1 },
+          colors: colors,
+          startVelocity: 90,
+          ticks: 240
+        });
+        if (Date.now() < end) {
+          requestAnimationFrame(frame);
+        }
+      }());
+    }, [3000]);
+  </script>
+</body>
+
+</html>
