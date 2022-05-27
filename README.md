@@ -465,6 +465,11 @@ CSS的 `overscroll-behavior` 属性用于定义元素滚动到滚动区域边界
 
 ## `perspective` + `transform-style: preserve-3d` 属性
 
+[MDN - perspective](https://developer.mozilla.org/en-US/docs/Web/CSS/perspective)
+[Can I Use - CSS property: perspective](https://caniuse.com/mdn-css_properties_perspective)
+[MDN - ](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-style)
+[Can I Use - CSS property: transform-style](https://caniuse.com/mdn-css_properties_transform-style)
+
 两者结合产生3D空间视觉。
 
 `perspective` 用于设置透视效果，即Z方向上观察点和屏幕直接的距离，值不能为负值。
