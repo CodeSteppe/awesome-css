@@ -327,6 +327,14 @@ CSS 中的 `linear-gradient()` 函数大家应该接触的不少，除此之外 
 
 `radial-gradient()` 用于产生一个从中心向外辐射的渐变色图像。
 
+## `repeating-linear-gradient()` 函数
+
+[MDN - repeating-linear-gradient()](https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/repeating-linear-gradient)
+
+[Can I Use - repeating-linear-gradient()](https://caniuse.com/mdn-css_types_image_gradient_repeating-linear-gradient)
+
+`repeating-linear-gradient()` 用于产生一个重复的线性渐变色图像。
+
 ## `accent-color` 属性
 
 > [MDN - accent-color](https://developer.mozilla.org/en-US/docs/Web/CSS/accent-color)
