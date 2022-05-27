@@ -203,6 +203,25 @@ img {
 }
 ```
 
+## `background-attachment`
+
+[MDN - background-attachment](https://developer.mozilla.org/en-US/docs/Web/CSS/background-attachment)
+
+[Can I use - CSS background-attachment](https://caniuse.com/background-attachment)
+
+用于设置元素的背景图是否相对于 viewport、自身还是content固定。常用于实现视差滚动效果。
+
+**常用值：**
+
+```css
+/* 相对于viewport固定 */
+background-attachment: fixed;
+/* 相对于元素自身固定，不会随content滚动 */
+background-attachment: scroll;
+/* 相对于content固定，会随content滚动 */
+background-attachment: local;
+```
+
 ## `object-fit` 属性
 
 > [MDN - object-fit](https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit)

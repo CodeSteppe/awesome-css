@@ -10,3 +10,6 @@
 [submodule "features/text-reflection"]
 	path = features/text-reflection
 	url = git@github.com:CodeSteppe/text-reflection.git
+[submodule "features/image-compare"]
+	path = features/image-compare
+	url = git@github.com:CodeSteppe/image-compare.git
