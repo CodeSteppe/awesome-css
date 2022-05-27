@@ -45,7 +45,7 @@ CSS 提供了对多列布局的支持。支持设置布局中的列数 (`column-
 
 比如实现下面的这种多级列表的序号：
 
-![list counters](./images/counter.png);
+![list counters](./images/counter.png)
 
 **常用方法：**
 
@@ -209,6 +209,23 @@ CSS 的 `filter` 属性将图像的效果调整（模糊、对比度、灰度、
 比如，每年的国家公祭日很多网站会把颜色调整成黑白，就可以用 `filter` 一行代码搞定：
 
 ![gray-scale](./images/gray-scale.png)
+
+**常用方法**
+
+```scss
+filter: blur(5px);
+filter: brightness(0.4);
+filter: contrast(200%);
+filter: drop-shadow(16px 16px 20px blue);
+filter: grayscale(50%);
+filter: hue-rotate(90deg);
+filter: invert(75%);
+filter: opacity(25%);
+filter: saturate(30%);
+filter: sepia(60%);
+```
+
+[Filters on image](https://codepen.io/mudontire/pen/MWYWpoG)
 
 ## `backdrop-filter` 属性
 
