@@ -50,9 +50,14 @@ CSS 提供了对多列布局的支持。支持设置布局中的列数 (`column-
 **常用方法：**
 
 ```
-1. counter-reset: <name> <value>; // 初始化一个名称为 <name> 的计数器，设置初始值为 <value>
-2. counter-increment: <name> <value>; // 给名称为 <name> 的计数器的值增加 <value>
-3. counter(<name>, <style>); // 返回名称为 <name> 的计数器的值，以 <style> 的 list style样式显示
+// 初始化一个名称为 <name> 的计数器，设置初始值为 <value>
+1. counter-reset: <name> <value>; 
+
+// 给名称为 <name> 的计数器的值增加 <value>
+2. counter-increment: <name> <value>; 
+
+// 返回名称为 <name> 的计数器的值，以 <style> 的 list style样式显示
+3. counter(<name>, <style>); 
 ```
 
 ## CSS `attr()` 方法
@@ -64,10 +69,13 @@ CSS 提供了对多列布局的支持。支持设置布局中的列数 (`column-
 可以通过CSS的 `attr()` 方法把 HTML 的 attributes 赋值给某些 CSS property。目前正式支持赋值的只有 `content` property，其他 property 还在实验阶段。
 
 **用法：**
+
+**HTML:**
 ```html
 <p data-foo="hello">world</p>
 ```
 
+**CSS:**
 ```css
 p::before{
   content: attr(data-foo) " ";
@@ -264,7 +272,8 @@ filter: sepia(60%);
 ```
 
 [Filters on image](https://codepen.io/mudontire/pen/MWYWpoG)
-[CS 3D tunnel](https://codepen.io/mudontire/pen/OJQzjWm)
+
+[CSS 3D tunnel](https://codepen.io/mudontire/pen/OJQzjWm)
 
 ## `backdrop-filter` 属性
 
@@ -475,8 +484,11 @@ CSS的 `overscroll-behavior` 属性用于定义元素滚动到滚动区域边界
 
 两者结合产生3D空间视觉。
 
-`perspective` 用于设置透视效果，即Z方向上观察点和屏幕直接的距离，值不能为负值。
+`perspective` 用于设置透视效果，即Z方向上观察点和屏幕之间的距离，值不能为负值。
 
 `transform-style: preserve-3d` 用于设置子元素在3D空间中显示。
 
+比如实现一个3D文字：
+
+![thank you](./images/thank%20you.png)
 
