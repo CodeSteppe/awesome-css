@@ -319,6 +319,10 @@ CSS 中的 `linear-gradient()` 函数大家应该接触的不少，除此之外 
 
 [**Codepen demo**](https://codepen.io/mudontire/pen/LYzQJLq)
 
+## `radial-gradient()` 函数
+
+
+
 ## `accent-color` 属性
 
 > [MDN - accent-color](https://developer.mozilla.org/en-US/docs/Web/CSS/accent-color)

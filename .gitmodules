@@ -13,3 +13,6 @@
 [submodule "features/image-compare"]
 	path = features/image-compare
 	url = git@github.com:CodeSteppe/image-compare.git
+[submodule "features/stamp-border"]
+	path = features/stamp-border
+	url = https://github.com/CodeSteppe/stamp-border
